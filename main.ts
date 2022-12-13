@@ -17,24 +17,44 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 function derecha () {
-    ContinuousServo.spin_one_way_with_speed(AnalogPin.P2, 100)
-    ContinuousServo.spin_other_way_with_speed(AnalogPin.P1, 0)
+    robotbit.MotorRunDual(
+    robotbit.Motors.M1A,
+    99,
+    robotbit.Motors.M1B,
+    0
+    )
 }
 function Parar () {
-    ContinuousServo.spin_one_way_with_speed(AnalogPin.P1, 0)
-    ContinuousServo.spin_other_way_with_speed(AnalogPin.P2, 0)
+    robotbit.MotorRunDual(
+    robotbit.Motors.M1A,
+    0,
+    robotbit.Motors.M1B,
+    0
+    )
 }
 function adelante () {
-    ContinuousServo.spin_one_way_with_speed(AnalogPin.P2, 100)
-    ContinuousServo.spin_other_way_with_speed(AnalogPin.P1, 100)
+    robotbit.MotorRunDual(
+    robotbit.Motors.M1A,
+    99,
+    robotbit.Motors.M1B,
+    99
+    )
 }
 function atras () {
-    ContinuousServo.spin_one_way_with_speed(AnalogPin.P1, 100)
-    ContinuousServo.spin_other_way_with_speed(AnalogPin.P2, 100)
+    robotbit.MotorRunDual(
+    robotbit.Motors.M1A,
+    -90,
+    robotbit.Motors.M1B,
+    -90
+    )
 }
 function izquierda () {
-    ContinuousServo.spin_one_way_with_speed(AnalogPin.P1, 100)
-    ContinuousServo.spin_other_way_with_speed(AnalogPin.P2, 0)
+    robotbit.MotorRunDual(
+    robotbit.Motors.M1A,
+    0,
+    robotbit.Motors.M1B,
+    99
+    )
 }
 let comando = 0
 radio.setGroup(1)

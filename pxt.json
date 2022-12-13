@@ -6,7 +6,9 @@
         "radio": "*",
         "microphone": "*",
         "RoboBit": "github:4tronix/robobit#1.3.0",
-        "ContinuousServo": "github:tinkertanker/pxt-continuous-servo#v0.0.6"
+        "ContinuousServo": "github:tinkertanker/pxt-continuous-servo#v0.0.6",
+        "MaqueenPlus": "github:dfrobot/pxt-dfrobot-maqueenplus#v1.5.1",
+        "robotbit": "github:kittenbot/pxt-robotbit#v0.4.4"
     },
     "files": [
         "main.blocks",
